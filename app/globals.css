@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
+@tailwind utilities; 
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,9 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.buttons-container button{
+  padding: 0px;
+  border:1px solid white;
+  height: 50px;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+/* html{
+  scrollbar-width: none;;
+} */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #be185d; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #be185d; 
 }
